@@ -1,4 +1,2 @@
-backTopUserJS
-=============
+# "Go Up Button" Chrome extension
 
-chrome extension back top button
