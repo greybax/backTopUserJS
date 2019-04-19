@@ -1,11 +1,21 @@
-﻿.up-button{
-	width: 40px;
-	height: 40px;
-	opacity: 0.3;
+﻿.up-button {
+	width: 41px;
+	height: 25px;
 	position: fixed;
-	bottom: 50px;
-	right: 100px;
+	bottom: 1px;
+	right: 1px;
 	display: none;
-	text-indent: -9999px;
-	background-color: #6495ed;
+	cursor: pointer;
+}
+
+.up-button img {
+	width: 60px;
+	position: fixed;
+	bottom: 1px;
+	right: 1px;
+	display: block;
+}
+
+.up-button img:hover {
+	margin-bottom: 10px;
 }

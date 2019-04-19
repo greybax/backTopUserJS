@@ -1,17 +1,32 @@
 ﻿{
-    "manifest_version": 2,
-    "content_scripts": [ {
-        "exclude_globs":    [  ],
-        "include_globs":    [ "*" ],
-        "js":               [ "jquery.js", "backTopUserJS.user.js" ],
-		"css": 				[ "css/style.css" ],
-		"matches":          [   "http://*/*",
-                                "https://*/*"
-                            ],
-        "run_at": "document_end"
-    } ],
-    "converted_from_user_script": true,
-    "description":  "Back top userscript extension for google chrome",
-    "name":         "backTopUserJS",
-    "version":      "1"
+  "manifest_version": 2,
+  "name": "Go Up Button",
+  "description": "Scroll back to top button for every webpage in your browser",
+  "short_name": "Scroll back to top button",
+  "version": "1.0.1",
+  "homepage_url": "https://github.com/greybax/backTopUserJS",
+  "permissions": [
+    "activeTab"
+  ],
+  "web_accessible_resources": ["icons/go_up_arrow.png"],
+  "icons": {
+		"16": "icons/icon-16.png",
+		"48": "icons/icon-48.png",
+		"128": "icons/icon-128.png"
+	},
+  "content_scripts": [
+    {
+      "js": [
+        "index.js"
+      ],
+      "css": [
+        "css/style.css"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "run_at": "document_end"
+    }
+  ]
 }
